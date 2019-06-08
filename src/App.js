@@ -27,15 +27,12 @@ class App extends Component {
     };
 
     const updatedItems = [...this.state.items, newItem];
-    this.setState(
-      {
-        items: updatedItems,
-        item: "",
-        id: uuid(),
-        editItem: false
-      },
-      () => console.log(this.state)
-    );
+    this.setState({
+      items: updatedItems,
+      item: "",
+      id: uuid(),
+      editItem: false
+    });
   };
 
   clearList = () => {
@@ -43,7 +40,7 @@ class App extends Component {
   };
 
   handleDelete = id => {
-    console.log(`delete ${id}`);
+    console.log(`handle delete ${id}`);
   };
 
   handleEdit = id => {
