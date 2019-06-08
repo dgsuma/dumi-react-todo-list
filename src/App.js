@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import TodoInput from "./components/TodoInput";
 import TodoList from "./components/TodoList";
 
-// showing vs-code github setup
+// Finished Application and Working order
 class App extends Component {
   state = {
     items: [],
